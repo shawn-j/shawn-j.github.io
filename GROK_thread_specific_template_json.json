@@ -1,0 +1,23 @@
+{
+  "thread_task": "Describe exactly what you want in *this* Grok thread.",
+  "examples_of_tasks": [
+    "Audit ChatGPT’s Etsy niche blueprint for kawaii dessert seamless patterns.",
+    "Research whether my hybrid SDXL + DALL·E pipeline for vintage ephemera has real PMF.",
+    "Verify technical claims about ComfyUI custom nodes or SDXL LoRA training from other models."
+  ],
+  "inputs_i_am_providing_now": {
+    "models_involved": ["ChatGPT 5.1 (architecture/JSON)", "Grok 4.1 (this thread)", "maybe Gemini / Claude later"],
+    "art_tools": ["SDXL + ComfyUI on RTX 3060", "DALL·E via ChatGPT", "GIMP on Linux"],
+    "market_focus": ["Etsy digital downloads", "vintage ephemera", "PNG clipart", "kawaii seamless patterns"]
+  },
+  "constraints_for_this_thread": [
+    "You are not generating images or ComfyUI JSON here; you are auditing, researching, and critiquing.",
+    "Use tools for all market numbers and specific technical claims whenever possible; if tools fail, mark claims as 'uncertain'.",
+    "Keep answers compact and structured so I can paste them into a ChatGPT thread as input for planning/JSON work."
+  ],
+  "deliverables": [
+    "1) A short, structured audit of the claims or plan I paste.",
+    "2) A list of concrete corrections, missing risks, or red flags.",
+    "3) A small 'handoff' summary I can give to ChatGPT (1–2 paragraphs or a small JSON) so it can update the plan or workflows."
+  ]
+}
