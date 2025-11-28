@@ -1,0 +1,126 @@
+{
+  "thread_template_version": "2025-11-27",
+  "thread_metadata": {
+    "thread_label": "<short_name_for_this_thread>",
+    "primary_goal": "<one-sentence_outcome_for_this_thread>",
+    "task_type": "<e.g._Etsy_PMf_analysis | ComfyUI_JSON_surgery | SDXL_pattern_pipeline | Thumbnail_design | Automation_workflow | Crypto_rotation | Other>",
+    "priority_level": "<high | medium | low>",
+    "time_horizon": "<today_only | this_week | long_term_project>"
+  },
+  "niche_or_domain": {
+    "etsy_niche": "<e.g._kawaii_dessert_patterns | vintage_ephemera | png_clipart_animals | leave_blank_if_not_etsy>",
+    "product_format": "<e.g._seamless_patterns | png_clipart_bundle | printable_sheets | hybrid_bundle | NA>",
+    "target_customer_use": "<what_buyer_does_with_this_product_or_output>",
+    "pmf_status": "<exploring | validated | deprecated_candidate>",
+    "known_risks_or_red_flags": [
+      "<e.g._niche_may_be_saturated>",
+      "<e.g._AI_text_is_unreliable_here>"
+    ]
+  },
+  "tools_and_env_for_this_thread": {
+    "local_tools": {
+      "uses_sdxl_comfyui": true,
+      "uses_controlnet_or_ipadapter": "<true_false_or_details>",
+      "uses_gimp_or_photoshop": "<minimal | moderate | heavy | none>",
+      "uses_automation": "<UI.Vision | Make.com | Google_Sheets | none | other>",
+      "other_local_constraints": [
+        "<e.g._RTX_3060_12GB_memory_limits>",
+        "<e.g._Pop!_OS_desktop_only_for_this_task>"
+      ]
+    },
+    "online_llms_in_play": {
+      "chatgpt_5_1_role": "<architect | code_surgeon | planner | other>",
+      "grok_role": "<research_auditor | pmf_checker | not_used>",
+      "gemini_role": "<image_analysis | fact_grounding | not_used>",
+      "other_models": [
+        "<e.g._claude_for_code | none>"
+      ]
+    }
+  },
+  "artifacts_and_inputs": {
+    "inputs_user_will_provide": [
+      "<e.g._10_Etsy_screenshots>",
+      "<e.g._3_ComfyUI_JSON_workflows>",
+      "<e.g._CSV_exports_from_EtsyHunt_or_eRank>",
+      "<e.g._sample_images_or_thumbnails>",
+      "<e.g._Grok_or_Gemini_JSON_audits>"
+    ],
+    "existing_assets_to_respect": [
+      "<e.g._upscale3.json>",
+      "<e.g._Cozy_Rustic_Kitchen_Pattern_Generator.json>",
+      "<e.g._Etsy_Ecosystem_Blueprint_excerpt>"
+    ],
+    "expected_outputs_from_this_thread": [
+      "<e.g._final_ComfyUI_workflow_patch>",
+      "<e.g._Etsy_listing_spec_for_1_bundle>",
+      "<e.g._thumbnail_style_spec_JSON>",
+      "<e.g._automation_macro_template>",
+      "<e.g._decision_on_whether_to_pursue_this_niche>"
+    ]
+  },
+  "constraints_for_this_thread": {
+    "busywork_tolerance": "<ultra_low | low | medium | high>",
+    "ai_only_vs_manual": "<AI_only_if_possible | light_GIMP_ok | manual_layout_acceptable | specify>",
+    "file_and_platform_limits": [
+      "<e.g._Etsy_100MB_per_listing_20MB_per_file>",
+      "<e.g._max_10_images_per_listing>",
+      "<e.g._ComfyUI_zod_schema_strict_for_JSON>",
+      "<other_relevant_limits>"
+    ],
+    "forbidden_or_deprecated_directions": [
+      "<e.g._no_new_text-heavy_ephemera_workflows>",
+      "<e.g._do_not_optimize_niche_marked_deprecated_in_master_pack>"
+    ]
+  },
+  "cross_llm_collaboration_plan": {
+    "when_to_call_grok": [
+      "<e.g._whenever_market_or_PMF_numbers_are_needed>",
+      "<e.g._to_audit_any_bold_claims_about_sales_or_saturation>"
+    ],
+    "when_to_call_gemini": [
+      "<e.g._for_image_or_thumbnail_critique>",
+      "<e.g._for_visual_comparison_against_bestsellers>"
+    ],
+    "when_to_consider_other_models": [
+      "<e.g._large_JSON_generation_or_code_needs_may_be_handled_by_Claude_if_enabled>"
+    ],
+    "handoff_format_between_models": {
+      "preferred_schema_for_audits": "<e.g._structured_JSON_with_keys_errata | pmf_risks | numeric_estimates | evidence_snippets>",
+      "how_user_will_paste_back": "<short_note_on_how_external_JSON_or_text_will_be_returned_to_this_thread>"
+    }
+  },
+  "session_hygiene_and_thread_scope": {
+    "expected_thread_length": "<short | medium | long>",
+    "rotation_or_split_plan": [
+      "<when_thread_gets_slow,_start_new_thread_and_carry_over_updated_strategy_pack>",
+      "<reminder_to_generate_breakout_prompt_when_major_phase_finishes>"
+    ],
+    "autosave_targets": [
+      "<which_outputs_user_will_store_in_GitHub_or_Notes>",
+      "<IDs_or_names_for_any_JSON_packs_to_version>"
+    ]
+  },
+  "success_criteria": {
+    "hard_criteria": [
+      "<e.g._one_validated_ComfyUI_JSON_that_runs_without_errors>",
+      "<e.g._one_Etsy-ready_bundle_spec_with_file_counts_and_sizes>",
+      "<e.g._clear_decision_to_pursue_or_drop_this_niche>",
+      "<e.g._thumbnail_style_spec_that_matches_page1_bestsellers>"
+    ],
+    "soft_criteria": [
+      "<e.g._reduced_manual_GIMP_steps>",
+      "<e.g._better_alignment_with_PMF_and_low-support-goals>",
+      "<e.g._cleaner_cross-model_workflow>"
+    ]
+  },
+  "open_questions_for_this_thread": [
+    "<what_are_the_big_unknowns_we_need_to_answer_here?>",
+    "<what_data_do_we_currently_lack?>",
+    "<what_decisions_must_be_made_before_scaling_production?>"
+  ],
+  "today_next_actions": [
+    "<step_1_user_can_do_right_now>",
+    "<step_2_model_should_help_with_next>",
+    "<optional_step_3_for_cross-check_with_Grok_or_Gemini>"
+  ]
+}
