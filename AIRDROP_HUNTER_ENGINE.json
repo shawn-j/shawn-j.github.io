@@ -1,0 +1,69 @@
+{
+  "week_of": "2025-12-01",
+  "gas_environment": "0.04-0.1 gwei (L1)",
+  "wallet_type": "hardware_wallet_fresh",
+  "weekly_budget_usd": 50,
+  "estimated_weekly_spend": 2,
+  "priority_chains": [
+    "Base (retro-active weighting)",
+    "Zircuit (Season 3 ongoing)",
+    "Taiko (incentivized usage)"
+  ],
+  "tasks": [
+    {
+      "chain": "Base",
+      "tier": "Tier_0",
+      "action": "Do 1 small swap (<$2) on a major DEX, and 1 cheap NFT mint (<$0.05).",
+      "time_min": 3,
+      "gas_cost_usd": 0.02,
+      "notes": "Base heavily weights organic usage; avoid repetitive patterns."
+    },
+    {
+      "chain": "Zircuit",
+      "tier": "Tier_0",
+      "action": "Perform 1 swap (<$1 equivalent) and optionally 1 transfer to another of your addresses.",
+      "time_min": 3,
+      "gas_cost_usd": 0.03,
+      "notes": "Zircuit S3 accounts for 'recency' and 'account diversity'. Avoid volume loops."
+    },
+    {
+      "chain": "Taiko",
+      "tier": "Tier_0",
+      "action": "Bridge 0.001-0.002 ETH into Taiko, then do a single swap.",
+      "time_min": 4,
+      "gas_cost_usd": 0.04,
+      "notes": "Taiko rewards L1→L2 bridging + usage. Use slightly varied amounts weekly."
+    },
+    {
+      "chain": "Ethereum_L1",
+      "tier": "Tier_1",
+      "action": "Perform 1 L1 signature or attestation on a reputable infra protocol (NOT EigenLayer).",
+      "time_min": 2,
+      "gas_cost_usd": 0.01,
+      "notes": "L1 'human activity' signals help across multiple ecosystems."
+    },
+    {
+      "chain": "General",
+      "tier": "Sybil_Risk_Mitigation",
+      "action": "Vary bridge routes, amounts, and timing; avoid identical patterns.",
+      "time_min": 0,
+      "gas_cost_usd": 0,
+      "notes": "Prevents clustering & bot-pattern detection."
+    }
+  ],
+  "estimated_total_time_min": 12,
+  "ev_projection": "1.5x-2.2x realistic (corrected from overestimated earlier values)",
+  "avoid": [
+    "Scroll (snapshot closed)",
+    "zkSync main airdrop (closed)",
+    "Linea (snapshot window closed)",
+    "EigenLayer (requires LSTs)",
+    "Blast (high sybil flag rate)"
+  ],
+  "next_steps": [
+    "Spread actions across 2-3 days weekly.",
+    "Vary bridge amounts slightly each week.",
+    "Watch Zircuit's X feed for S3/S4 transitions.",
+    "Monitor Base retro rumors weekly."
+  ]
+}
