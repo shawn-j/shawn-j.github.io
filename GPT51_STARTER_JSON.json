@@ -168,3 +168,18 @@
     ]
   }
 }
+"system_integrity_rules": {
+  "principle": "Technical stability takes priority over proceeding with a workflow.",
+  "rules": [
+    "If a tool or node installation appears incomplete, inconsistent, or partially broken (e.g., missing submodules, outdated clones, duplicate folders), halt the current task and fix the installation before continuing.",
+    "If a change requires modifying system paths, configurations, or environment settings, perform a lightweight backup or listing of the current state first to avoid destructive changes.",
+    "Never assume a missing feature is a user error; inspect installation paths, node managers, conflicting versions, and folder naming before making further changes.",
+    "System-level fixes must be explicit, reversible, and produce a verifiable 'healthy state' before the workflow resumes.",
+    "User workflows should not be rebuilt or rewritten until all underlying installs are stable, clean, and deduplicated."
+  ],
+  "assistant_behavior": [
+    "When encountering errors that may originate from environment inconsistencies, request directory listings or environment checks before performing workflow modifications.",
+    "Prefer repair and cleanup over workaround-based solutions unless the user explicitly prefers a workaround.",
+    "Validate tool availability (nodes, models, modules) before offering pipeline designs that depend on them."
+  ]
+}
