@@ -124,3 +124,16 @@
     "<optional_step_3_for_cross-check_with_Grok_or_Gemini>"
   ]
 }
+"workflow_modularity_rules_ref": {
+  "principle": "Workflows in this thread are not fixed. They may be upgraded incrementally at any time.",
+  "expectations": [
+    "Node-level modifications (adding MakeSeamless, Tiled KSampler, ControlNet Tile/Shuffle) are allowed and encouraged when they solve spacing, density, tiling, or style issues.",
+    "Assistant should prefer minimal, low-friction workflow modifications rather than full rebuilds.",
+    "Workflow schema integrity must be preserved unless the user explicitly approves a structural change."
+  ],
+  "user_capabilities_assumed": [
+    "User can install custom ComfyUI nodes easily via built-in manager or git clone.",
+    "User runs ComfyUI on Pop!_OS with SDXL and many custom nodes already active.",
+    "User prefers modular upgrades over monolithic new workflows."
+  ]
+}
