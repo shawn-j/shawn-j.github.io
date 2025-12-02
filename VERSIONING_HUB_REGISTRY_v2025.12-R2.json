@@ -1,0 +1,47 @@
+{
+  "registry_version": "2025.12-R2",
+  "hub_label": "Versioning_Hub_3_Master_Control",
+  "active_versions": {
+    "master_prompt": "MASTER_PROMPT_v2025.12.1_JSON",
+    "thread_template": "THREAD_TEMPLATE_v2025.12_JSON",
+    "thread_config": "THREAD_CONFIG_v2025.12",
+    "best_practices": "BEST_PRACTICES_v2025.12.1_JSON",
+    "thread_config_generator": "THREAD_CONFIG_GENERATOR_v2025.12.1_JSON",
+    "registry_version": "2025.12-R2"
+  },
+  "repository": {
+    "master_prompts": {
+      "MASTER_PROMPT_v2025.12.1_JSON": {
+        "status": "active",
+        "previous_version": "MASTER_PROMPT_v2025.12_JSON",
+        "reason_for_change": "Updated for multi-agent alignment and thread health monitor"
+      }
+    },
+    "best_practices": {
+      "BEST_PRACTICES_v2025.12.1_JSON": {
+        "status": "active",
+        "previous_version": null,
+        "reason_for_change": "Initial canonical best practices document"
+      }
+    },
+    "generators": {
+      "THREAD_CONFIG_GENERATOR_v2025.12.1_JSON": {
+        "status": "active",
+        "previous_version": null,
+        "reason_for_change": "Initial thread config generator"
+      }
+    },
+    "thread_templates": {},
+    "thread_configs": {},
+    "migrations": {},
+    "other": {}
+  },
+  "deprecated_threads": {
+    "VERSIONING_HUB_v1": {
+      "status": "deprecated",
+      "deprecated_date": "2025-12-02",
+      "replaced_by": "VERSIONING_HUB_v2",
+      "reason": "Superseded by structured registry, audits, migrations, and multi-agent design"
+    }
+  }
+}
