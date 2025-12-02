@@ -1,0 +1,66 @@
+{
+  "asset_id": "BEST_PRACTICES_v2025.12.1_JSON",
+  "version": "2025-12-02.1",
+  "content": {
+    "best_practices_version": "2025-12-02.1",
+    "scope": [
+      "prompt_engineering_for_multi_llm_ecosystem",
+      "thread_config_design_and_hard_constraints",
+      "registry_versioning_and_migrations",
+      "multi_agent_collaboration_and_audits"
+    ],
+    "core_principles": [
+      "make_every_important_behavior_explicit_in_json_not_only_in_natural_language",
+      "treat_every_prompt_template_thread_config_and_migration_plan_as_a_versioned_asset",
+      "never_modify_an_existing_asset_silently_always_create_a_new_version_and_deprecate_the_old_one",
+      "use_a_single_canonical_source_of_truth_per_asset_type_the_versioning_hub_registry",
+      "keep_operational_threads_narrow_and_use_starter_packs_to_load_context",
+      "separate_architecture_meta_threads_from_operational_work_threads",
+      "prefer_simple_pipelines_that_can_be_reused_over_complex_ones_that_are_brittle"
+    ],
+    "thread_design_checklist": [
+      "define_thread_label_primary_goal_task_type_priority_and_time_horizon",
+      "lock_product_type_theme_primary_style_engine_and_tool_roles",
+      "declare_all_required_inputs_user_will_provide",
+      "declare_expected_outputs_in_clear_machine_readable_terms",
+      "state_busywork_tolerance_and_forbidden_directions_explicitly",
+      "reference_the_exact_master_prompt_and_thread_template_versions_by_id",
+      "decide_in_advance_which_other_models_are_allowed_in_this_thread_and_for_what"
+    ],
+    "versioning_rules": [
+      "use_monotonic_versions_for_all_assets",
+      "never_reuse_an_asset_id",
+      "change_in_behavior_requires_new_version",
+      "log_previous_version_and_reason",
+      "mark_old_versions_as_deprecated_not_deleted",
+      "large_structural_changes_require_migration_plans"
+    ],
+    "multi_agent_rules": [
+      "chatgpt_is_primary_architect",
+      "grok_is_external_data_auditor_with_market_validation",
+      "gemini_is_visual_defect_inspector",
+      "claude_is_optional_json_reviewer",
+      "no_model_may_propose_global_changes_without_registry_update"
+    ],
+    "operational_safety": [
+      "never_assume_external_tools_exist",
+      "do_not_invent_capabilities",
+      "require_explicit_user_confirmation_of_local_paths",
+      "if_uncertain_call_grok_or_ask_user",
+      "avoid_long_threads_prefer_forks"
+    ],
+    "registry_and_migration_hygiene": [
+      "keep_single_registry",
+      "log_all_changes",
+      "use_migrations_for_large_schema_or_id_changes",
+      "use_guardrails_during_migrations",
+      "run_referential_integrity_checks"
+    ],
+    "thread_health_and_drift": [
+      "use_thread_health_monitor",
+      "fork_threads_on_drift",
+      "use_starter_packs_for_clean_context",
+      "never_treat_threads_as_memory_continuations"
+    ]
+  }
+}
