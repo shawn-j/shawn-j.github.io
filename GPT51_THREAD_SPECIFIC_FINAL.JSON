@@ -1,0 +1,92 @@
+{
+  "thread_template_version": "2025-12-01",
+  "thread_metadata": {
+    "thread_label": "<short_name_for_this_thread>",
+    "primary_goal": "<one_sentence_goal>",
+    "task_type": "<etsy_pattern_production | comfyui_json_surgery | sdxl_workflow_debug | airdrop_strategy | automation_engineering | other>",
+    "priority_level": "<high | medium | low>",
+    "time_horizon": "<today_only | this_week | long_term_project>"
+  },
+  "niche_or_domain": {
+    "etsy_niche": "<if_etsy_task_otherwise_null>",
+    "product_format": [
+      "<primary_product_type>",
+      "<secondary_format_or_empty>"
+    ],
+    "target_customer_use": [
+      "<optional: planners | scrapbooking | printables | collectors>",
+      "<optional>"
+    ],
+    "pmf_status": "<unknown | promising | validated | deprecated>",
+    "known_risks_or_red_flags": [
+      "<technical_risk>",
+      "<market_risk>",
+      "<style_risk>"
+    ]
+  },
+  "tools_and_env_for_this_thread": {
+    "local_tools": {
+      "uses_sdxl_comfyui": "<true_or_false>",
+      "uses_gimp": "<true_or_false>",
+      "uses_dalle_via_chatgpt": "<true_or_false>",
+      "system_paths_or_versions": [
+        "<optional_local_paths_or_versions>"
+      ]
+    },
+    "online_llms_in_play": {
+      "chatgpt_role": "primary_architect_and_integrator",
+      "grok_role": "<true_if_used>",
+      "gemini_role": "<true_if_used>",
+      "claude_role": "<true_if_used>"
+    }
+  },
+  "artifacts_and_inputs": {
+    "existing_good_assets": [
+      "<optional_filenames_here>"
+    ],
+    "inputs_user_will_provide": [
+      "<images | json | csv | chain_results>"
+    ],
+    "expected_outputs_from_this_thread": [
+      "<concrete_outputs_desired>"
+    ]
+  },
+  "constraints_for_this_thread": {
+    "busywork_tolerance": "<ultra_low | low | moderate>",
+    "ai_only_vs_manual": "<AI_first | hybrid | manual_heavy>",
+    "file_and_platform_limits": [
+      "<optional: etsy_limits | resolution_limits>"
+    ],
+    "forbidden_or_deprecated_directions": [
+      "<do_not_flip_product_type>",
+      "<do_not_change_visual_engine>",
+      "<do_not_add_option_bloat>"
+    ]
+  },
+  "current_locked_decisions": {
+    "primary_product_type": "<chosen_type>",
+    "primary_theme": "<chosen_theme>",
+    "primary_style_engine": "<dalle | sdxl>",
+    "secondary_tooling_role": "<sdxl_optional | gimp_optional>",
+    "process_strategy": "<e.g._seamless_tile_first_then_export>"
+  },
+  "workflow_outline": {
+    "phase_1": [
+      "<steps_for_generation_or_collection>"
+    ],
+    "phase_2": [
+      "<steps_for_processing_or_packaging>"
+    ],
+    "phase_3": [
+      "<steps_for_export_or_delivery>"
+    ]
+  },
+  "success_criteria": {
+    "hard_criteria": [
+      "<must_be_done>"
+    ],
+    "soft_criteria": [
+      "<nice_to_have>"
+    ]
+  }
+}
