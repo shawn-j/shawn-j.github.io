@@ -1,0 +1,49 @@
+{
+  "asset_id": "THREAD_CONFIG_GENERATOR_v2025.12.1_JSON",
+  "version": "2025-12-02.1",
+  "content": {
+    "generator_version": "2025-12-02.1",
+    "label": "Thread_Config_Generator_for_Multi_Agent_System",
+    "input_contract": {
+      "type": "object",
+      "required_fields": [
+        "thread_label",
+        "primary_goal",
+        "task_type",
+        "priority_level",
+        "time_horizon",
+        "domain_or_niche",
+        "primary_product_type",
+        "primary_theme",
+        "primary_style_engine",
+        "tooling_context",
+        "busywork_tolerance",
+        "forbidden_directions"
+      ]
+    },
+    "output_contract": {
+      "type": "object",
+      "required_top_level_fields": [
+        "thread_template_version",
+        "thread_metadata",
+        "niche_or_domain",
+        "tools_and_env_for_this_thread",
+        "artifacts_and_inputs",
+        "constraints_for_this_thread",
+        "current_locked_decisions",
+        "workflow_outline",
+        "success_criteria"
+      ]
+    },
+    "generation_steps": [
+      "map_thread_description_to_metadata",
+      "map_domain_to_niche_or_domain_block",
+      "construct_tools_and_env_block_using_tooling_context",
+      "define_artifacts_inputs_outputs",
+      "encode_busywork_tolerance_and_forbidden_directions",
+      "lock_primary_product_type_theme_style_engine",
+      "outline_simple_three_phase_workflow",
+      "set_success_criteria_based_on_primary_goal"
+    ]
+  }
+}
